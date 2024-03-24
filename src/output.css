@@ -681,6 +681,8 @@ video {
   align-items: center;
   justify-content: space-between;
   border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .header__logo {
@@ -1292,6 +1294,16 @@ nav ul li a {
 .px-\[5rem\] {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px-\[rem\] {
+  padding-left: rem;
+  padding-right: rem;
+}
+
+.px-\[0rem\] {
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 .pb-10 {

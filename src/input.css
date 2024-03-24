@@ -45,7 +45,7 @@ body {
     @apply fixed lg:static z-[100] w-full mx-auto bg-white
 }
 .header__wrapper {
-    @apply flex items-center justify-between border-b-[1px] 
+    @apply flex items-center justify-between border-b-[1px] border-black
 } 
 .header__logo {
     @apply w-[200px] py-2 lg:w-[250px]
