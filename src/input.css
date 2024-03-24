@@ -12,14 +12,13 @@ body {
 
 @layer components {
 
-/* HEADER */
 /* CHISBURGIR */
 .burgir__menu {
     @apply lg:hidden cursor-pointer duration-500
 }
 
 .burgir__menu.active {
-    @apply rotate-180 transition-all duration-500 ease-in-out leading-relaxed
+    @apply rotate-180 transition-all duration-500 ease-in-out leading-[1.625rem]
 }
 .burgir__menu span {
     @apply w-[40px] h-[0.375rem] bg-gray-700 m-[4px] block rounded-full transition-all cursor-pointer box-border border-solid border-["#e5e7eb"]
@@ -38,72 +37,58 @@ body {
     @apply transform translate-x-[-0.1rem] translate-y-[-0.1rem] rotate-[38deg] transition-all duration-500 ease-out w-[1.70rem]
 }
 
-.header {
-    @apply fixed lg:static z-[100] w-full mx-auto bg-white
-}
-
+/* HEADER */
 .container {
     @apply w-full mx-auto px-[15px];
 }
-
+.header {
+    @apply fixed lg:static z-[100] w-full mx-auto bg-white
+}
 .header__wrapper {
     @apply flex items-center justify-between border-b-[1px] 
 } 
-
 .header__logo {
-    @apply w-[200px] py-2 md:w-[250px]
+    @apply w-[200px] py-2 lg:w-[250px]
 }
-
 .header__logo a {
     @apply text-inherit decoration-inherit;
 }
-
 .header__logo a img {
     @apply max-w-[80%] h-auto block
 }
-
 .header__contacts {
     @apply hidden lg:block;
 }
-
 .header__contacts ul {
     @apply flex items-center box-border;
 }
-
 .header__contacts ul li {
     @apply mx-2;
 }
-
 .header__contacts ul li i {
     @apply font-[900] mr-3;
 }
-
 .header__contacts li a.epbi {
     @apply bg-[#3b5897] hover:bg-[#1573e5] border text-white block px-[1.5rem] py-[.5rem]
 }
-
 .header__contacts li a.faq {
     @apply bg-white hover:bg-darkberde hover:text-white outline-1 text-black block border-black px-[1.5rem] py-[.5rem] border-[1px]
 }
 
 
 /* NAV */
-
 nav {
     @apply absolute top-[114px] right-[100%] z-[99] w-full bg-white h-screen lg:h-auto lg:right-0  lg:block lg:static ease-in-out duration-300 transition-all
 }
 nav.active {
-    @apply top-[95px] left-0 flex flex-col transition-all duration-300;
+    @apply top-[95px] left-0 flex flex-col transition-all duration-300
 }
-
 nav.active ul li {
     @apply border-0
 }
-
 nav ul {
     @apply lg:flex lg:justify-between uppercase
 }
-
 nav ul li {
     @apply relative mt-[1.25rem] my-5 w-full border-gray-300 border-solid p-[0.1rem] border-r-2
 }
@@ -140,13 +125,13 @@ nav ul li a {
 .faq__details li.active {
     @apply cursor-pointer my-3 text-darkberde underline
 }
-.faq__inpo {
+.faq__content {
     @apply leading-9 hidden transition-all;
 }
-.faq__inpo h3 {
+.faq__content h3 {
     @apply text-2xl mb-10 font-semibold text-justify cursor-pointer
 }
-.faq__inpo.active {
+.faq__content.active {
     @apply block transition-all;
 }
 .faq__infos {
@@ -159,7 +144,7 @@ nav ul li a {
     @apply font-semibold text-base md:text-lg w-[80%] pt-5;
 }
 .faq__question span {
-    @apply text-darkberde text-2xl font-bold hidden md:inline-block
+    @apply text-darkberde text-2xl font-bold hidden lg:inline-block
 }
 .faq__answer {
     @apply max-h-[0rem] md:max-h-[0rem] overflow-hidden ease-out duration-[0.5s] my-[2rem];
@@ -186,22 +171,10 @@ nav ul li a {
     @apply text-darkberde mr-3
 }
 .fa-regular {
-    @apply bg-white border-black;
+    @apply bg-white border-black
 }
 
 /* FOOTER */
-.footer {
-@apply pt-10 pb-10 bg-grayish;
-}
-.footer .container {
-@apply w-full mx-auto px-[15px];
-}
-.footer__wrapper {
-@apply px-[5rem] lg:flex justify-between border-b-2 border-b-gray-500 pb-5 px-[3rem]
-}
-.footer__logo {
-@apply my-2 mx-auto lg:mx-0
-}
 .footer__logo figure a {
 @apply text-inherit decoration-inherit
 }

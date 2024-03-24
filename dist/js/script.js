@@ -5,16 +5,16 @@ burgir.addEventListener("click", () => {
     headerA.classList.toggle("active");
 });
 
-const faqinfoAccordion = document.querySelectorAll(".faq__infos");
-faqinfoAccordion.forEach((accordions) => {
-    accordions.addEventListener("click", ()=>{
-        accordions.classList.toggle("active");
+const faqinfo = document.querySelectorAll(".faq__infos");
+faqinfo.forEach((infos) => {
+    infos.addEventListener("click", ()=>{
+        infos.classList.toggle("active");
     });
 });
 
 
 const faqsLinks = document.querySelectorAll(".faq__links");
-const faqsContent = document.querySelectorAll(".faq__block");
+const faqsContent = document.querySelectorAll(".faq__content");
 faqsLinks.forEach((faq) => {
   faq.addEventListener("click", () => {
     removeActiveFaqs();
